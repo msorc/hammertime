@@ -19,7 +19,7 @@ module Hammertime
   end
 
   def self.debug_supported?
-    require 'ruby-debug'
+    require 'debugger'
     @debug_support = true
   rescue LoadError
     warn "Unable to load ruby-debug"
